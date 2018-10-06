@@ -11,7 +11,7 @@
 
         <p>
             使用兵种
-            <Select siez="large">
+            <Select siez="large" @on-change="handleSoldierClassChange">
                 <Option v-for="item in classes" :value="item.value" :key="item.value">{{item.label}}</Option>
             </Select>
 
@@ -21,24 +21,24 @@
         <p>
             使用武器
 
-            <Cascader size="large" :data="weapons" trigger="hover" v-model="value1"></Cascader>
+            <Cascader @on-change="handleWeaponChange" filterable size="large" :data="weapons" trigger="hover" v-model="value1"></Cascader>
         </p>
         <p>
             游戏模式
 
-            <Cascader size="large" :data="gameModes" trigger="hover" v-model="value1"></Cascader>
+            <Cascader @on-change="handleGameModeChange" size="large" :data="gameModes" trigger="hover" value="Conquest"></Cascader>
         </p>
         <p>
             地图
 
-            <Cascader size="large" :data="maps" trigger="hover" v-model="value1"></Cascader>
+            <Cascader @on-change="handleMapChange" filterable size="large" :data="maps" trigger="hover" v-model="value1"></Cascader>
         </p>
 
         <Divider></Divider>
 
         <p v-html="tpl"></p>
         
-        <Button type="primary">复制文本</Button>
+        <Button type="primary" @click="copy">复制文本</Button>
         </Content>
         <Footer>
 
@@ -55,18 +55,11 @@
 export default {
     data() {
         return {
-            tpl: `
-Use wallhack, aimbot, damage change during the game.
-<br>
-Class: Assault
-<br>
-Using weapon: M97 Trench Gun Sweeper 
-<br>
-Game Mode: Conquest
-<br>
-Map: Sinai Desert
-<br>
-            `,
+            hack: '',
+            soldierClass: '',
+            map: '',
+            weapon: '',
+            gameMode: '',
             classes: [
                 {
                     value: "Assault",
@@ -252,9 +245,247 @@ Map: Sinai Desert
                                 label: '原厂'
                             }
                         ]
-                    }
+                    },
+                    {
+                        value: 'M1907 SL',
+                        label: 'M1907'
+                    },
+                    {
+                        value: 'Mondragon',
+                        label: ' 蒙德拉贡'
+                    },
+                    {
+                        value: 'Autoloading 8.35',
+                        label: '8.35 八爷'
+                    },
+                    {
+                        value: 'Selbstlader 1906',
+                        label: '1906'
+                    },
+                    {
+                        value: 'RSC 1917',
+                        label: 'RSC 1917'
+                    },
+                    {
+                        value: 'Fedorov Avtomat',
+                        label: ' 菲德洛夫'
+                    },
+                    {
+                        value: 'General Liu Rifle',
+                        label: '刘将军'
+                    },
+                    {
+                        value: 'Farquhar-Hill',
+                        label: '法夸尔'
+                    },
+                    {
+                        value: 'Howell Automatic',
+                        label: 'Howell'
+                    },
                 ],
-            }],
+            }, 
+            {
+                value: 'Support',
+                label: '支援',
+                children: [
+                    {
+                        value: 'Lewis Gun',
+                        label: '路易斯'
+                    },
+                    {
+                        value: 'M1909 Benet-Mercie',
+                        label: 'M1909'
+                    },
+                    {
+                        value: 'Madsen MG',
+                        label: '麦德森'
+                    },
+                    {
+                        value: 'MG15 n.A.',
+                        label: 'MG15'
+                    },
+                    {
+                        value: 'BAR M1918',
+                        label: 'BAR M1918'
+                    },
+                    {
+                        value: 'Huot Automatic',
+                        label: '霍特'
+                    },
+                    {
+                        value: 'Chauchat',
+                        label: '绍沙'
+                    },
+                    {
+                        value: 'Parabellum MG14/17',
+                        label: 'MG 14/17'
+                    },
+                    {
+                        value: 'Perino Model 1908',
+                        label: 'Perino Model 1908'
+                    },
+                    {
+                        value: 'M1917 MG',
+                        label: 'M1917 MG'
+                    },
+                    {
+                        value: 'IMG 08/18',
+                        label: 'IMG 08/18'
+                    },
+                    {
+                        value: 'Burton LMR',
+                        label: '波顿'
+                    },
+                    {
+                        value: 'C96 Carbine',
+                        label: 'C96 卡宾'
+                    },
+                    {
+                        value: 'P08 Artillerie',
+                        label: 'P08'
+                    },
+                    {
+                        value: 'Pieper M1893',
+                        label: 'Pieper M1893'
+                    },
+                    {
+                        value: 'M1911 Extended',
+                        label: 'M1911 扩展'
+                    },
+                    {
+                        value: 'Mle 1903 Extended',
+                        label: 'Mle 1903 扩展'
+                    },
+                    {
+                        value: 'C93 Carbine',
+                        label: 'C93 卡宾'
+                    }
+                ]
+            },
+            {
+                value: 'Scout',
+                label: '侦查',
+                children: [
+                    {
+                        value: 'Russian 1895',
+                        label: 'Russian 1895'
+                    },
+                    {
+                        value: 'Gewehr 98',
+                        label: 'G98'
+                    },
+                    {
+                        value: 'SMLE MKIII',
+                        label: '老李'
+                    },
+                    {
+                        value: 'Gewehr M.95',
+                        label: 'G95'
+                    },
+                    {
+                        value: 'M1903',
+                        label: 'M1903'
+                    },
+                    {
+                        value: 'Martini-Henry',
+                        label: '马提尼'
+                    },
+                    {
+                        value: 'Lawrence of Arabia\'s SMLE',
+                        label: '劳伦的老李'
+                    },
+                    {
+                        value: 'Lebel Model 1886',
+                        label: 'Lebel 1886'
+                    },
+                    {
+                        value: 'Mosin-Nagant M91',
+                        label: '莫辛纳甘 M91'
+                    },
+                    {
+                        value: 'Vetterli-Vitali M1870/87',
+                        label: 'Vetterli-Vitali M1870/87'
+                    },
+                    {
+                        value: 'Type 38 Arisaka',
+                        label: '三八式步枪'
+                    },
+                    {
+                        value: 'Carcano M91',
+                        label: 'Carcano M91'
+                    },
+                    {
+                        value: 'Ross MKIII',
+                        label: ' 罗斯'
+                    },
+                    {
+                        value: 'M1917 Enfield',
+                        label: 'M1917 英菲尔德',
+                        children: [
+                            {
+                                value: 'Infantry',
+                                label: '步兵'
+                            },
+                            {
+                                value: 'Silenced',
+                                label: '消音器'
+                            },
+                        ]
+                    }
+                ]
+            },
+            {
+                value: 'Tanker',
+                label: '坦克',
+                children: [
+                    {
+                        value: 'Landship',
+                        label: '巡航坦克'
+                    },
+                    {
+                        value: 'Heavy Tank',
+                        label: '重坦'
+                    },
+                    {
+                        value: 'Light Tank',
+                        label: '轻坦'
+                    },
+                    {
+                        value: 'Artillery Truck',
+                        label: '火炮车'
+                    },
+                    {
+                        value: 'Assault Tank',
+                        label: '圣莎萌'
+                    },
+                    {
+                        value: 'Assault Truck',
+                        label: '菊花车'
+                    },
+                ]
+            }, {
+                value: 'Pilot',
+                label: '飞行员',
+                children: [
+                    {
+                        value: 'Attack Plane',
+                        label: '攻击机'
+                    },
+                    {
+                        value: 'Bomber',
+                        label: '轰炸机'
+                    },
+                    {
+                        value: 'Fighter',
+                        label: ' 狗斗机'
+                    },
+                    {
+                        value: 'Heavy Bomber',
+                        label: '重型轰炸机'
+                    }
+                ]
+            }
+            ],
             gameModes: [
                 {
                     value: 'Conquest',
@@ -273,7 +504,7 @@ Map: Sinai Desert
                     label: '突袭'
                 },
                 {
-                    value: 'shock operations',
+                    value: 'Shock Operations',
                     label: '闪击行动'
                 },
                 {
@@ -332,8 +563,8 @@ Map: Sinai Desert
                 ]
             },
             {
-                value: 'They Shall Not Pass',
-                label: '誓死坚守 dlc',
+                value: 'They Shall Not Pass DLC',
+                label: '誓死坚守 DLC',
                 children: [
                     {
                         value: 'Verdun Heights',
@@ -362,8 +593,8 @@ Map: Sinai Desert
                 ]
             },
             {
-                value: 'In the Name of the Tsar',
-                label: '以沙皇之名 dlc',
+                value: 'In the Name of the Tsar DLC',
+                label: '以沙皇之名 DLC',
                 children: [
                     {
                         value: 'Lupkow Pass',
@@ -393,8 +624,8 @@ Map: Sinai Desert
                 ]
             },
             {
-                value: 'Turning Tides',
-                label: '力挽狂澜 dlc',
+                value: 'Turning Tides DLC',
+                label: '力挽狂澜 DLC',
                 children: [
                     {
                         value: 'Cape Helles',
@@ -417,8 +648,8 @@ Map: Sinai Desert
                 ]
             },
             {
-                value: 'Apocalypse',
-                label: '天启 dlc',
+                value: 'Apocalypse DLC',
+                label: '天启 DLC',
                 children: [
                     {
                         value: 'Passchendaele',
@@ -447,8 +678,42 @@ Map: Sinai Desert
         }
     },
     methods: {
-        change (status) {
-            this.$Message.info('开关状态：' + status);
+        copy () {
+            this.$Message.info('已复制！');
+        },
+        handleMapChange(value) {
+            this.map = value.join(' - ')
+
+            console.log(value.join(' - '), this.map)
+        },
+        handleWeaponChange(value) {
+            this.weapon = value.join(' - ')
+
+            console.log(value.join(' - '))
+        },
+        handleGameModeChange(value) {
+            this.gameMode = value.join(' - ')
+
+            console.log(value.join(' - '))
+        },
+        handleSoldierClassChange(value) {
+            this.soldierClass = value
+        }
+    },
+    computed: {
+        tpl: function() {
+            return `
+Use wallhack, aimbot, damage change during the game.
+<br>
+Class: ${this.soldierClass}
+<br>
+Using weapon: ${this.weapon} 
+<br>
+Game Mode: ${this.gameMode}
+<br>
+Map: ${this.map}
+<br>
+            `
         }
     }
 }
