@@ -83,9 +83,17 @@ Map: Sinai Desert
                 {
                     value: "Scout",
                     label: "侦查"
+                },
+                {
+                    value: "Tanker",
+                    label: "坦克"
+                },
+                {
+                    value: 'Pilot',
+                    label: '飞行员'
                 }
             ],
-            value1: ['请选择武器'],
+            value1: ['Assault'],
             weapons: [{
                 value: 'Assault',
                 label: '突击',
@@ -423,6 +431,14 @@ Map: Sinai Desert
                     {
                         value: 'River Somme',
                         label: '索姆河'
+                    },
+                    {
+                        value: 'Razor\'s Edge',
+                        label: '剃刀边缘'
+                    },
+                    {
+                        value: 'London Calling',
+                        label: '伦敦的呼唤'
                     }
                     
                 ]
