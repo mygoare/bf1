@@ -1,9 +1,13 @@
 import Vue from 'vue';
+
+import iView from 'iview';
+import 'iview/dist/styles/iview.css';
+
 import App from './app.vue';
 
 require('./css/main.scss');
 
-console.log('hello');
+Vue.use(iView);
 
 const root = document.createElement('div');
 document.body.appendChild(root);
