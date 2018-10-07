@@ -1,0 +1,30 @@
+[
+    {
+        "value": "Conquest",
+        "label": "征服"
+    },
+    {
+        "value": "Domination",
+        "label": "抢攻"
+    },
+    {
+        "value": "Frontlines",
+        "label": "前线"
+    },
+    {
+        "value": "Rush",
+        "label": "突袭"
+    },
+    {
+        "value": "Shock Operations",
+        "label": "闪击行动"
+    },
+    {
+        "value": "Grand Operations",
+        "label": "大行动"
+    },
+    {
+        "value": "Team Deathmatch",
+        "label": "团队死斗"
+    }
+]

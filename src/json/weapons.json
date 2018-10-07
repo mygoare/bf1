@@ -1,0 +1,438 @@
+[  
+    {  
+      "value":"Assault",
+      "label":"突击",
+      "children":[  
+        {  
+          "value":"Model 10-A",
+          "label":"Model 10-A",
+          "children":[  
+            {  
+              "value":"Slug",
+              "label":"散弹块"
+            },
+            {  
+              "value":"Hunter",
+              "label":"猎人"
+            },
+            {  
+              "value":"Factory",
+              "label":"原厂"
+            }
+          ]
+        },
+        {  
+          "value":"M97 Trench Gun",
+          "label":"M97",
+          "children":[  
+            {  
+              "value":"Sweeper",
+              "label":"扫荡"
+            },
+            {  
+              "value":"Backbored",
+              "label":"低后座"
+            },
+            {  
+              "value":"Hunter",
+              "label":"猎人"
+            }
+          ]
+        },
+        {  
+          "value":"Mp18",
+          "label":"Mp18",
+          "children":[  
+            {  
+              "value":"Trench",
+              "label":"壕沟战"
+            },
+            {  
+              "value":"Experimental",
+              "label":"实验"
+            },
+            {  
+              "value":"Optical",
+              "label":"瞄准镜"
+            }
+          ]
+        },
+        {  
+          "value":"Automatico M1918",
+          "label":"M1918"
+        },
+        {  
+          "value":"12g Automatic",
+          "label":"12g"
+        },
+        {  
+          "value":"hellriegel 1915",
+          "label":"hellriegel 1915"
+        },
+        {  
+          "value":"Hellfighter Trench Shotgun",
+          "label":"Hellfighter Trench Shotgun"
+        },
+        {  
+          "value":"Sjogren Inertial",
+          "label":"Sjogren Inertial"
+        },
+        {  
+          "value":"Ribeyrolles 1918",
+          "label":"Ribeyrolles 1918"
+        },
+        {  
+          "value":"Model 1900",
+          "label":"1900"
+        },
+        {  
+          "value":"SMG 08/18",
+          "label":"SMG 08/18"
+        },
+        {  
+          "value":"Maschinenpistole M1912/p.16",
+          "label":"M1912/p.16"
+        },
+        {  
+          "value":"M1917 Carbine",
+          "label":"M1917 Carbine"
+        },
+        {  
+          "value":"RSC SMG",
+          "label":"RSC SMG"
+        },
+        {  
+          "value":"M1919 SMG",
+          "label":"M1919 SMG"
+        },
+        {  
+          "value":"Annihilator",
+          "label":"汤姆逊冲锋枪"
+        },
+        {  
+          "value":"Frommer Stop Auto",
+          "label":"Frommer Stop Auto"
+        },
+        {  
+          "value":"Sawed Off Shotgun",
+          "label":"Sawed Off Shotgun"
+        }
+      ]
+    },
+    {  
+      "value":"Medic",
+      "label":"医疗",
+      "children":[  
+        {  
+          "value":"Cei-Rigotti",
+          "label":"Cei-Rigotti",
+          "children":[  
+            {  
+              "value":"Trench",
+              "label":"壕沟战"
+            },
+            {  
+              "value":"Optical",
+              "label":"瞄准镜"
+            },
+            {  
+              "value":"Factory",
+              "label":"原厂"
+            }
+          ]
+        },
+        {  
+          "value":"Selbstlader M1916",
+          "label":"M1916",
+          "children":[  
+            {  
+              "value":"Marksman",
+              "label":"神射手"
+            },
+            {  
+              "value":"Optical",
+              "label":"瞄准镜"
+            },
+            {  
+              "value":"Factory",
+              "label":"原厂"
+            }
+          ]
+        },
+        {  
+          "value":"M1907 SL",
+          "label":"M1907"
+        },
+        {  
+          "value":"Mondragon",
+          "label":" 蒙德拉贡"
+        },
+        {  
+          "value":"Autoloading 8.35",
+          "label":"8.35 八爷"
+        },
+        {  
+          "value":"Selbstlader 1906",
+          "label":"1906"
+        },
+        {  
+          "value":"RSC 1917",
+          "label":"RSC 1917"
+        },
+        {  
+          "value":"Fedorov Avtomat",
+          "label":" 菲德洛夫"
+        },
+        {  
+          "value":"General Liu Rifle",
+          "label":"刘将军"
+        },
+        {  
+          "value":"Farquhar-Hill",
+          "label":"法夸尔"
+        },
+        {  
+          "value":"Howell Automatic",
+          "label":"Howell"
+        }
+      ]
+    },
+    {  
+      "value":"Support",
+      "label":"支援",
+      "children":[  
+        {  
+          "value":"Lewis Gun",
+          "label":"路易斯"
+        },
+        {  
+          "value":"M1909 Benet-Mercie",
+          "label":"M1909"
+        },
+        {  
+          "value":"Madsen MG",
+          "label":"麦德森"
+        },
+        {  
+          "value":"MG15 n.A.",
+          "label":"MG15"
+        },
+        {  
+          "value":"BAR M1918",
+          "label":"BAR M1918"
+        },
+        {  
+          "value":"Huot Automatic",
+          "label":"霍特"
+        },
+        {  
+          "value":"Chauchat",
+          "label":"绍沙"
+        },
+        {  
+          "value":"Parabellum MG14/17",
+          "label":"MG 14/17"
+        },
+        {  
+          "value":"Perino Model 1908",
+          "label":"Perino Model 1908"
+        },
+        {  
+          "value":"M1917 MG",
+          "label":"M1917 MG"
+        },
+        {  
+          "value":"IMG 08/18",
+          "label":"IMG 08/18"
+        },
+        {  
+          "value":"Burton LMR",
+          "label":"波顿"
+        },
+        {  
+          "value":"C96 Carbine",
+          "label":"C96 卡宾"
+        },
+        {  
+          "value":"P08 Artillerie",
+          "label":"P08"
+        },
+        {  
+          "value":"Pieper M1893",
+          "label":"Pieper M1893"
+        },
+        {  
+          "value":"M1911 Extended",
+          "label":"M1911 扩展"
+        },
+        {  
+          "value":"Mle 1903 Extended",
+          "label":"Mle 1903 扩展"
+        },
+        {  
+          "value":"C93 Carbine",
+          "label":"C93 卡宾"
+        }
+      ]
+    },
+    {  
+      "value":"Scout",
+      "label":"侦查",
+      "children":[  
+        {  
+          "value":"Russian 1895",
+          "label":"Russian 1895"
+        },
+        {  
+          "value":"Gewehr 98",
+          "label":"G98"
+        },
+        {  
+          "value":"SMLE MKIII",
+          "label":"老李"
+        },
+        {  
+          "value":"Gewehr M.95",
+          "label":"G95"
+        },
+        {  
+          "value":"M1903",
+          "label":"M1903"
+        },
+        {  
+          "value":"Martini-Henry",
+          "label":"马提尼"
+        },
+        {  
+          "value":"Lawrence of Arabia's SMLE",
+          "label":"劳伦的老李"
+        },
+        {  
+          "value":"Lebel Model 1886",
+          "label":"Lebel 1886"
+        },
+        {  
+          "value":"Mosin-Nagant M91",
+          "label":"莫辛纳甘 M91"
+        },
+        {  
+          "value":"Vetterli-Vitali M1870/87",
+          "label":"Vetterli-Vitali M1870/87"
+        },
+        {  
+          "value":"Type 38 Arisaka",
+          "label":"三八式步枪"
+        },
+        {  
+          "value":"Carcano M91",
+          "label":"Carcano M91"
+        },
+        {  
+          "value":"Ross MKIII",
+          "label":" 罗斯"
+        },
+        {  
+          "value":"M1917 Enfield",
+          "label":"M1917 英菲尔德",
+          "children":[  
+            {  
+              "value":"Infantry",
+              "label":"步兵"
+            },
+            {  
+              "value":"Silenced",
+              "label":"消音器"
+            }
+          ]
+        }
+      ]
+    },
+    {  
+      "value":"Tanker",
+      "label":"坦克",
+      "children":[  
+        {  
+          "value":"Landship",
+          "label":"巡航坦克"
+        },
+        {  
+          "value":"Heavy Tank",
+          "label":"重坦"
+        },
+        {  
+          "value":"Light Tank",
+          "label":"轻坦"
+        },
+        {  
+          "value":"Artillery Truck",
+          "label":"火炮车"
+        },
+        {  
+          "value":"Assault Tank",
+          "label":"圣莎萌"
+        },
+        {  
+          "value":"Assault Truck",
+          "label":"菊花车"
+        }
+      ]
+    },
+    {  
+      "value":"Pilot",
+      "label":"飞行员",
+      "children":[  
+        {  
+          "value":"Attack Plane",
+          "label":"攻击机"
+        },
+        {  
+          "value":"Bomber",
+          "label":"轰炸机"
+        },
+        {  
+          "value":"Fighter",
+          "label":" 狗斗机"
+        },
+        {  
+          "value":"Heavy Bomber",
+          "label":"重型轰炸机"
+        }
+      ]
+    },
+    {
+      "value": "elite",
+      "label": "精英兵",
+      "children": [
+        {
+          "value": "Infiltrator",
+          "label": "入侵者"
+        },
+        {
+          "value": "Trench Raider",
+          "label": "战壕奇兵"
+        },
+        {
+          "value": "Tank Hunter",
+          "label": "坦克猎手"
+        },
+        {
+          "value": "Flame Trooper",
+          "label": "喷火兵"
+        },
+        {
+          "value": "Sentry",
+          "label": "哨兵",
+          "children": [
+            {
+              "value": "MG 08/15",
+              "label": "MG 08/15"
+            },
+            {
+              "value": "Villar Perosa",
+              "label": "维拉佩罗萨"
+            }
+          ]
+        }
+      ]
+    }
+  ]
