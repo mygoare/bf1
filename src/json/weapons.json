@@ -117,7 +117,7 @@
         },
         {
           "value":"12g Automatic",
-          "label":"12g",
+          "label":"12g 自动散弹枪",
           "children":[
             {
               "value":"Backbored",
@@ -140,7 +140,7 @@
         },
         {
           "value":"Ribeyrolles 1918",
-          "label":"Ribeyrolles 1918",
+          "label":"利贝罗勒 1918",
           "children":[
             {
               "value":"Factory",
@@ -431,7 +431,7 @@
       "children":[  
         {  
           "value":"Lewis Gun",
-          "label":"刘易斯",
+          "label":"路易士",
           "children": [
             {
               "value": "Low Weight",
@@ -449,7 +449,7 @@
         },
         {  
           "value":"M1909 Benét-Mercié",
-          "label":"M1909",
+          "label":"M1909 贝内特-梅西耶机枪",
           "children": [
             {
               "value": "Storm",
@@ -503,7 +503,7 @@
         },
         {
           "value":"BAR M1918",
-          "label":"BAR M1918",
+          "label":"BAR M1918 白朗宁",
           "children": [
             {
               "value": "Trench",
