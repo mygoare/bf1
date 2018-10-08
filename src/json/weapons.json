@@ -351,7 +351,7 @@
         },
         {
           "value":"Fedorov Avtomat",
-          "label":" 菲德洛夫",
+          "label":" 费德洛夫",
           "children":[
             {
               "value":"Trench",
@@ -742,10 +742,6 @@
             {
               "value": "Experimental",
               "label": "实验"
-            },
-            {
-              "value": "Infantry",
-              "label": "步兵"
             }
           ]
         },
@@ -763,10 +759,6 @@
             }
 ]
             },
-        {
-          "value":"Mosin-Nagant M38 Carbine",
-          "label":"Mosin-Nagant M38 Carbine"
-        },
         {
           "value":"Lebel Model 1886",
           "label":"Lebel 1886",
@@ -813,7 +805,7 @@
         },
         {
           "value":"Carcano M91",
-          "label":"Carcano M91",
+          "label":"卡尔布诺 M91",
           "children": [
             {
               "value": "Trench",
