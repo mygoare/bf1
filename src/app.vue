@@ -31,10 +31,12 @@
                     <p>Use {{hack}} during the game.</p>
                     <p v-html="tpl"></p>
                 </div>
+
                 <Divider></Divider>
 
-
                 <Button data-clipboard-target="#tpl" type="primary" @click="copy">复制文本</Button>
+
+                <a href="https://www.3dmgame.com/gl/3667467.html" target="_blank">如何举报外挂？</a>
             </content>
             <footer>
                 <p>
