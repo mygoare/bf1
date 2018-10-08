@@ -7,21 +7,22 @@
                 <Checkbox size="large" v-model="aimbot">自瞄</Checkbox>
                 <Checkbox size="large" v-model="oneShotKill">秒杀</Checkbox>
                 <Checkbox size="large" v-model="gadgetModify">改装备</Checkbox>
+                <Checkbox size="large" v-model="stealth">隐身</Checkbox>
 
                 <p>
                     使用武器
 
-                    <Cascader @on-change="handleWeaponChange" filterable size="large" :data="weapons" trigger="hover" v-model="value1"></Cascader>
+                    <Cascader @on-change="handleWeaponChange" filterable size="large" :data="weapons" change-on-select></Cascader>
                 </p>
                 <p>
                     游戏模式
 
-                    <Cascader @on-change="handleGameModeChange" size="large" :data="gameModes" trigger="hover"></Cascader>
+                    <Cascader @on-change="handleGameModeChange" size="large" :data="gameModes"></Cascader>
                 </p>
                 <p>
                     地图
 
-                    <Cascader @on-change="handleMapChange" filterable size="large" :data="maps" trigger="hover" v-model="value1"></Cascader>
+                    <Cascader @on-change="handleMapChange" filterable size="large" :data="maps" trigger="hover"></Cascader>
                 </p>
 
                 <Divider></Divider>
@@ -71,6 +72,7 @@ export default {
             aimbot: true,
             oneShotKill: false,
             gadgetModify: false,
+            stealth: false,
 
             soldierClass: '',
             map: '',
@@ -104,6 +106,7 @@ export default {
             if (this.aimbot) arr.push('aimbot')
             if (this.oneShotKill) arr.push('one shot kill')
             if (this.gadgetModify) arr.push('gadget modify')
+            if (this.stealth) arr.push('stealth')
 
             return arr.join(', ')
         },
