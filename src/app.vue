@@ -1,6 +1,6 @@
 <template>
         <Layout>
-            <header>战地1举报外挂模板生成</header>
+            <header>战地1外挂举报助手</header>
             <content>
                 <Checkbox size="large" v-model="wallhack">透视</Checkbox>
                 <Checkbox size="large" v-model="damageChange">改伤</Checkbox>
@@ -8,6 +8,7 @@
                 <Checkbox size="large" v-model="oneShotKill">秒杀</Checkbox>
                 <Checkbox size="large" v-model="gadgetModify">改装备</Checkbox>
                 <Checkbox size="large" v-model="stealth">隐身</Checkbox>
+                <Checkbox size="large" v-model="shootingThroughWalls">子弹穿墙</Checkbox>
 
                 <p>
                     使用武器
@@ -75,6 +76,7 @@ export default {
             oneShotKill: false,
             gadgetModify: false,
             stealth: false,
+            shootingThroughWalls: false,
 
             soldierClass: '',
             map: '',
@@ -109,6 +111,7 @@ export default {
             if (this.oneShotKill) arr.push('one shot kill')
             if (this.gadgetModify) arr.push('gadget modify')
             if (this.stealth) arr.push('stealth')
+            if (this.shootingThroughWalls) arr.push('shooting through walls')
 
             return arr.join(', ')
         },
