@@ -10,21 +10,27 @@
                 <Checkbox size="large" v-model="stealth">隐身</Checkbox>
                 <Checkbox size="large" v-model="shootingThroughWalls">子弹穿墙</Checkbox>
 
-                <p>
-                    使用武器
+                <div class="block">
+                    使用武器：
 
                     <Cascader @on-change="handleWeaponChange" filterable size="large" :data="weapons" change-on-select></Cascader>
-                </p>
-                <p>
-                    游戏模式
+                </div>
+                <div class="block">
+                    游戏模式：
 
                     <Cascader @on-change="handleGameModeChange" size="large" :data="gameModes"></Cascader>
-                </p>
-                <p>
-                    地图
+                </div>
+                <div class="block">
+                    地图：
 
                     <Cascader @on-change="handleMapChange" filterable size="large" :data="maps" trigger="hover"></Cascader>
-                </p>
+                </div>
+                <div class="block">
+                    KD：
+
+                    <Input v-model="kills" width="auto" placeholder="击杀数" size="large" />
+                    <Input v-model="deaths" width="auto" placeholder="死亡数" size="large" />
+                </div>
 
                 <Divider></Divider>
 
@@ -58,6 +64,10 @@
         font-size: 1.2rem;
     }
 
+    .block {
+        margin: .4rem auto;
+    }
+
 </style>
 <script>
 const maps = require('./json/maps.json')
@@ -85,6 +95,8 @@ export default {
             weapons,
             gameModes,
             maps,
+            kills: '',
+            deaths: '',
         }
     },
     methods: {
@@ -125,6 +137,7 @@ export default {
                 <br>
                 Map: ${this.map}
                 <br>
+                KD: ${this.kills} - ${this.deaths}
             `
         }
     }
