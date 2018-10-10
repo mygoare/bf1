@@ -920,19 +920,43 @@
       "children": [
         {
           "value": "Infiltrator",
-          "label": "入侵者"
+          "label": "入侵者",
+          "children": [
+            {
+              "value": "Martini-Henry Grenade Launcher",
+              "label": "马提尼-亨利步枪榴弹反射器"
+            }
+          ]
         },
         {
           "value": "Trench Raider",
-          "label": "战壕奇兵"
+          "label": "战壕奇兵",
+          "children": [
+            {
+              "value": "Raider Club",
+              "label": "奇兵棒"
+            }
+          ]
         },
         {
           "value": "Tank Hunter",
-          "label": "坦克猎手"
+          "label": "坦克猎手",
+          "children": [
+            {
+              "value": "1918 Tankgewehr",
+              "label": "1918 Tankgewehr"
+            }
+          ]
         },
         {
           "value": "Flame Trooper",
-          "label": "喷火兵"
+          "label": "喷火兵",
+          "children": [
+            {
+              "value": "Wex",
+              "label": "喷火器"
+            }
+          ]
         },
         {
           "value": "Sentry",
