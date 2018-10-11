@@ -23,7 +23,7 @@
                 <div class="block">
                     地图：
 
-                    <Cascader @on-change="handleMapChange" filterable size="large" :data="maps" trigger="hover"></Cascader>
+                    <Cascader @on-change="handleMapChange" filterable size="large" :data="maps"></Cascader>
                 </div>
                 <div class="block">
                     KD：
