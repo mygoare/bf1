@@ -65,10 +65,4 @@ module.exports = {
   plugins: [
     new VueLoaderPlugin(),
   ],
-  devServer: {
-    historyApiFallback: true,
-    noInfo: true,
-    overlay: true,
-  },
-  devtool: '#eval-source-map',
 };

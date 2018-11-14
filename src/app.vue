@@ -47,6 +47,8 @@
             </content>
             <footer>
                 <p>
+                    有任何的意见或想法，欢迎 mygoare#gmail.com 联系我
+                    <br>
                     written by <a target="_blank" href="https://battlefieldtracker.com/bf1/profile/pc/fxodof3ts23edfsr">fxodof3ts23edfsr</a>
                 </p>
             </footer>
@@ -56,9 +58,9 @@
     header, content, footer {
         padding: 1rem 2rem;
     }
-    header, footer {
+    footer {
         background-color: #eee;
-        font-size: .6rem;
+        font-size: .7rem;
     }
     header {
         font-size: 1.2rem;
