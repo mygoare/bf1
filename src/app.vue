@@ -76,7 +76,6 @@ const maps = require('./json/maps.json')
 const weapons = require('./json/weapons.json')
 const gameModes = require('./json/gameModes.json')
 
-const ClipboardJS = require('clipboard')
 new ClipboardJS('.ivu-btn')
 
 export default {
