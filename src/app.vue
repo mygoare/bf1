@@ -49,7 +49,9 @@
                 <p>
                     有任何的意见或想法，欢迎 mygoare#gmail.com 联系我
                     <br>
-                    written by <a target="_blank" href="https://battlefieldtracker.com/bf1/profile/pc/fxodof3ts23edfsr">fxodof3ts23edfsr</a>
+                    Dev by <a target="_blank" href="https://battlefieldtracker.com/bf1/profile/pc/fxodof3ts23edfsr">fxodof3ts23edfsr</a>
+                    with
+                    <Icon type="ios-heart" color="#ed4014" />
                 </p>
             </footer>
         </Layout>
